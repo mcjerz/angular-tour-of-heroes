@@ -31,6 +31,14 @@ export class HeroService {
      );
   }
 
+  getAvatarHeroes() : Observable<Hero[]> {
+    return this.http.get<Hero[]>('https://last-airbender-api.herokuapp.com/api/v1/characters?allies=Aang')
+      .pipe(
+        tap(_ => this.log('fetched avatar heroes')),
+        catchError(this.handleError<Hero[]>('getHeroes', []))
+      );
+  }
+
   getHero(id: number): Observable<Hero>
   {
     const url = `${this.heroesUrl}/${id}`;

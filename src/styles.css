@@ -1,29 +1,33 @@
 /* Application-wide Styles */
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 2em;
+  background: linear-gradient(to top, #CFF, #FCC) no-repeat;
+  background-size: cover;
+}
+body, button, * {
+  color: #112A46;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
 h1 {
-    color: #ff8a8a;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #112A46;
+    font-family: 'Lobster', cursive;
     font-size: 250%;
   }
   h2, h3 {
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    color: #112A46;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bolder;
+    font-size: 125%;
   }
-  body {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 2em;
-    background-color: #369;
-  }
-  body, input[type="text"], button {
-    color: #333;
-    font-family: Cambria, Georgia, serif;
-  }
-  /* everywhere else */
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
+
+
   ul {
     border-radius: 15px;
   }
