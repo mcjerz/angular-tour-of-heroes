@@ -17,6 +17,7 @@ export class HeroDetailComponent implements OnInit {
     private heroService: HeroService,
     private location: Location
   ) {}
+  @Input() hero?: Hero;
 
   ngOnInit(): void {
     this.getHero();
@@ -32,5 +33,11 @@ export class HeroDetailComponent implements OnInit {
     this.location.back();
   }
 
-  @Input() hero?: Hero;
+  save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => this.goBack());
+    }
+  }
+
 }

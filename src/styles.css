@@ -1,6 +1,6 @@
 /* Application-wide Styles */
 h1 {
-    color: #369;
+    color: #ff8a8a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
   }
@@ -25,7 +25,5 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
   }
   ul {
-    
-    background-color: rgb(118, 175, 233);
     border-radius: 15px;
   }
